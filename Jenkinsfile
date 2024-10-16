@@ -1,4 +1,4 @@
-pipline {
+pipeline {
     agent any
     stages {
         stage('git checkout') {
@@ -22,7 +22,7 @@ pipline {
 
 
 
-// pipline {
+// pipeline {
 //     agent any
 //     environment {
 //         TF_VAR_access_key = credentials('aws-access-key')
