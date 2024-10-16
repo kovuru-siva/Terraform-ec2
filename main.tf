@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
   instance_type   = lookup(var.instance-type, "ap-south-1", "t2.medium")
   subnet_id       = module.vpc.publicsubnet
   security_groups = [module.vpc.security-group]
-  key_name        = aws_key_pair.my_key.webkey
+  key_name        = aws_key_pair.my_key.key_name
 
   #User data to format and mount the EBS Volume
   user_data = <<-EOF
