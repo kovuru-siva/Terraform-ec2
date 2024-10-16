@@ -1,5 +1,10 @@
 pipline {
     agent any
+    environment {
+        TF_VAR_access_key = credentials('aws-access-key')
+        TF_VAR_secret_key = credentials('aws-secret-key')
+    }
+
 
     stages {
         stage('Terraform init') {
