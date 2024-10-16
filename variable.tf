@@ -11,9 +11,9 @@ variable "instance-type" {
   }
 }
 
-variable "public-key" {
+variable "public_key" {
 
-  default = "~/.ssh/id_rsa.pub"
+  default = "~/.ssh/id_ed25519.pub"
 
 }
 

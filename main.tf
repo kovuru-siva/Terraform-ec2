@@ -63,7 +63,7 @@ output "public" {
 }
 
 output "key" {
-  value = var.public-key
+  value = var.public_key
 
 }
 
