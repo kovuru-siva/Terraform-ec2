@@ -53,7 +53,7 @@ resource "aws_volume_attachment" "example" {
 
 resource "aws_key_pair" "my_key" {
   key_name   = "webkey"
-  public_key = file(var.public-key)
+  public_key = file(var.public_key)
 
 }
 
